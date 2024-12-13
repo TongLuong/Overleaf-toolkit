@@ -1,17 +1,17 @@
-import subprocess
+import subprocess, os
 
-subprocess.run(["chmod +x bin/init"], shell = False)
-subprocess.run(["bin/init"], shell = False)
+subprocess.run(["chmod +x bin/init"], shell = True)
+subprocess.run(["bin/init"], shell = True)
 
-subprocess.run(["chmod +x bin/up"], shell = False)
-subprocess.run(["bin/up"], shell = False)
+subprocess.run(["chmod +x bin/up"], shell = True)
+subprocess.run(["bin/up"], shell = True)
 
-subprocess.run(["chmod +x bin/start"], shell = False)
-subprocess.run(["bin/start"], shell = False)
+subprocess.run(["chmod +x bin/start"], shell = True)
+subprocess.run(["bin/start"], shell = True)
 
-subprocess.run(["chmod +x bin/shell"], shell = False)
-subprocess.run(["bin/shell"], shell = False)
+subprocess.run(["chmod +x bin/shell"], shell = True)
+subprocess.run(["bin/shell"], shell = True)
 
-subprocess.run(["wget https://mirror.clientvps.com/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz"], shell = False)
-subprocess.run(["tar -xf install-tl-unx.tar.gz"], shell = False)
-subprocess.run(["perl install-tl", "i"], shell = False)
+subprocess.run(["wget https://mirror.clientvps.com/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz"], shell = True)
+subprocess.run(["tar -xf install-tl-unx.tar.gz"], shell = True)
+subprocess.run(["perl install-tl", "i"], shell = True)
