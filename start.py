@@ -1,5 +1,9 @@
 import subprocess, os
 
+subprocess.run(["sudo apt install gnome-terminal"], shell = True)
+subprocess.run(["sudo apt-get update"], shell = True)
+subprocess.run(["sudo apt-get install ./docker-desktop-amd64.deb"], shell = True)
+
 subprocess.run(["chmod -R 755 bin"], shell = True)
 
 # subprocess.run(["chmod +x bin/init"], shell = True)
