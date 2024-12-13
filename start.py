@@ -1,5 +1,6 @@
 import subprocess
 
+subprocess.run(["apt-get install sudo"], shell = True)
 subprocess.run(["sudo apt install gnome-terminal"], shell = True)
 subprocess.run(["sudo apt-get update"], shell = True)
 subprocess.run(["sudo apt-get install ./docker-desktop-amd64.deb"], shell = True)
